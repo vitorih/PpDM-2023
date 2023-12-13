@@ -17,7 +17,7 @@ function TelaInicial() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Seja bem-vindo</Text>
-
+      <br></br>
       <Pressable
         style={styles.Button}
         onPress={() => {
@@ -37,6 +37,7 @@ function TelaInicial() {
       </Pressable>
 
       <StatusBar style="auto" />
+      <br></br>
       <Text style={styles.text}>VIVARA</Text>
     </View>
   );
@@ -48,53 +49,40 @@ function TelaCadastro() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Digite seus dados</Text>
+       <br></br>
       <TextInput
         placeholder="E-mail"
         style={styles.input}
         onChangeText={onChangeText}
-        value={text}
-      />
-      <TextInput
-        placeholder="E-mail"
-        keyboardType="email-address"
-        style={styles.input}
-        onChangeText={onChangeText}
-        value={text}
+        
       />
       <TextInput
         placeholder="Nome Completo"
         keyboardType="text"
         style={styles.input}
         onChangeText={onChangeText}
-        value={text}
+        
       />
       <TextInput
         placeholder="Data de Nascimento"
         keyboardType="text"
         style={styles.input}
         onChangeText={onChangeText}
-        value={text}
+        
       />
       <TextInput
         placeholder="CPF"
         keyboardType="number"
         style={styles.input}
         onChangeText={onChangeText}
-        value={text}
-      />
-      <TextInput
-        placeholder="Senha"
-        keyboardType="text"
-        style={styles.input}
-        onChangeText={onChangeText}
-        value={text}
+        
       />
       <TextInput
         placeholder="Endereço"
         keyboardType="text"
         style={styles.input}
         onChangeText={onChangeText}
-        value={text}
+        
       />
       <TextInput
         placeholder="Senha"
@@ -120,22 +108,22 @@ function TelaLogin() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Faça seu login</Text>
+      <br></br>
       <StatusBar style="auto" />
       <TextInput
         placeholder="E-mail/CPF"
         keyboardType="address"
         style={styles.input}
         onChangeText={onChangeText}
-        value={text}
+        
       />
       <TextInput
         placeholder="Senha"
         keyboardType="number"
         style={styles.input}
         onChangeText={onChangeText}
-        value={text}
+      
       />
-
       <Pressable
         style={styles.Button}
         onPress={() => {
@@ -145,7 +133,7 @@ function TelaLogin() {
         <Text style={styles.text}>Logar</Text>
       </Pressable>
       <StatusBar style="auto" />
-      <Text>{text}</Text>
+    
     </View>
   );
 }
@@ -155,31 +143,40 @@ function TelaPerfil() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>VIVARA</Text>
+      <br></br>
       <Image
         style={styles.image1}
         source={{
           uri: "https://lojavivara.vtexassets.com/arquivos/ids/336754/Pingente-Personalizavel-Coracao-Ouro-Rose-6099_set.jpg?v=638114883127230000.png",
         }}
       />
+       <Text style={styles.text}>Colar Coração em Ouro Rosé </Text>
+       <Text style={styles.text}>R$ 2.490,00</Text>
       <Image
         style={styles.image2}
         source={{
           uri: "https://lojavivara.vtexassets.com/arquivos/ids/566260/Anel-Cores-em-Ouro-Rose-18k-com-Topazio-Verde-e-Diamantes-9069_hover.jpg?v=638286187100400000.png",
         }}
+        
       />
+      <Text style={styles.text}> Prata Pérolas e Topázios</Text>
+      <Text style={styles.text}>R$ 1.390,00</Text>
       <Image
         style={styles.image3}
         source={{
           uri: "https://static.glami.com.br/img/520x520bt/224973528.png",
         }}
       />
+      <Text style={styles.text}>Meia Aliança Eternity em Ouro Rosé</Text>
+      <Text style={styles.text}> R$ 4.150,00</Text>
       <Image
         style={styles.image4}
         source={{
           uri: "https://lojavivara.vtexassets.com/arquivos/ids/597434/Anel-Essenza-em-Ouro-Branco-18k-com-Agua-Marinha-e-Diamantes-81859_2_set.jpg?v=638326230194370000",
         }}
       />
-    
+    <Text style={styles.text}>Anel Life Topázio Azul</Text>
+    <Text style={styles.text}>R$ 290,00</Text>
       <Pressable
         style={styles.Button}
         onPress={() => {
@@ -267,12 +264,12 @@ const styles = StyleSheet.create({
   text: {
     fontFamily: "times",
     fontSize: 20,
-    color: "##1E1E1E",
+    color: "#1E1E1E",
   },
   text1: {
     fontFamily: "times",
     fontSize: 20,
-    color: "##1E1E1E",
+    color: "#1E1E1E",
     textDecorationLine: "underline",
   },
   text2: {
@@ -283,7 +280,7 @@ const styles = StyleSheet.create({
   text3: {
     fontFamily: "times",
     fontSize: 20,
-    color: "##1E1E1E",
+    color: "#1E1E1E",
     textDecorationLine: "underline",
   },
   text4: {
@@ -298,7 +295,7 @@ const styles = StyleSheet.create({
   },
   image1: {
     width: "200px",
-    height: "200px",
+    height: "100px",
     borderRadius: "100px",
     border: "8px solid #794A86",
   },
@@ -311,7 +308,7 @@ const styles = StyleSheet.create({
 
   image3: {
     width: "200px",
-    height: "200px",
+    height: "100px",
     borderRadius: "100px",
     border: "8px solid #794A86",
   },
